@@ -50,6 +50,7 @@ const processFileUploads = async (files) => {
 
 
 export const createRoom = async (req, res, next) => {
+  
   try {
     const hotelId = req.params.hotelid;
     if (!hotelId) {
@@ -108,6 +109,8 @@ export const createRoom = async (req, res, next) => {
         amenities: roomAmenitiesList,
         pricing: {
           pricingPlan: parsedData.pricing.pricingPlan,
+          duration: parsedData.pricing.duration,
+
           EPAI_based_Price: roomPricing.EPAI_based_Price,
           CPAI_based_Price: roomPricing.CPAI_based_Price,
           MAPAI_based_Price: roomPricing.MAPAI_based_Price,

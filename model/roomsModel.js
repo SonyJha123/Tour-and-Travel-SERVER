@@ -17,6 +17,8 @@ const roomschema = new Schema(
     },
     pricing: {
       pricingPlan: { type: String, enum: ["ANNUAL", "QUARTERLY"], default: "ANNUAL" },
+      duration: { type: String,required: false },
+
       EPAI_based_Price: priceSchema,
       CPAI_based_Price: priceSchema,
       MAPAI_based_Price: priceSchema,
