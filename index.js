@@ -24,7 +24,7 @@ app.use("/Users",userRoutes)
 
 app.use(errorHandler);
 app.get("/", (req, res) => {
-    res.send('Backend server is running!');
+    res.send('Backend server is running!😊');
 });
 
 app.listen(port, '0.0.0.0', () => {
