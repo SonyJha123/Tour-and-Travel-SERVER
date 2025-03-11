@@ -10,7 +10,8 @@ import userRoutes from "./route/userRoutes.js"
 
 const app = express()
 dotenv.config()
- const port = process.env.port || 8002
+
+ const port = process.env.PORT || 8002
  app.use(express.json());
   
 
